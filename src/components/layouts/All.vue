@@ -19,127 +19,118 @@
             <v-flex xs6 class="text-xs-center">
             </v-flex>
           </v-layout>
-            <a href="#/yes" style="text-decoration: none; margin-top:10%;">
-            <v-list>
-              <!-- eslint-disable-next-line -->
-              <v-list-tile ripple v-on:click="">
-                <v-list-tile-action>
-                  <v-icon class="ml-4" style="color:#39657B ; font-size:25px;">music_video</v-icon>
-                </v-list-tile-action>
-                <v-list-tile-content>
-                  <v-list-tile-title style="color:#39657B ; font-size:18px;" class="ml-3">
-                    MUSIC
-                  </v-list-tile-title>
-                </v-list-tile-content>
-              </v-list-tile>
-            </v-list>
+            <a href="/#/Category/music" style="text-decoration: none; margin-top:10%;"> 
+              <v-list>
+                <v-list-tile ripple v-on:click="">
+                  <v-list-tile-action>
+                    <v-icon class="ml-4" style="color:#39657B ; font-size:25px;">music_video</v-icon>
+                  </v-list-tile-action>
+                  <v-list-tile-content>
+                    <v-list-tile-title style="color:#39657B ; font-size:18px;" class="ml-3">
+                      MUSIC
+                    </v-list-tile-title>
+                  </v-list-tile-content>
+                </v-list-tile>
+              </v-list>
             </a>
-            <a href="#/yes" style="text-decoration: none; margin-top:10%;">
-            <v-list>
-              <!-- eslint-disable-next-line -->
-              <v-list-tile ripple v-on:click="">
-                <v-list-tile-action>
-                  <v-icon class="ml-4" style="color:#39657B ; font-size:25px;">public</v-icon>
-                </v-list-tile-action>
-                <v-list-tile-content>
-                  <v-list-tile-title style="color:#39657B ; font-size:18px;" class="ml-3">
-                    POLITICS
-                  </v-list-tile-title>
-                </v-list-tile-content>
-              </v-list-tile>
-            </v-list>
+
+            <a href="/#/Category/politics"  style="text-decoration: none; margin-top:10%;"> 
+              <v-list>
+                <v-list-tile ripple v-on:click="">
+                  <v-list-tile-action>
+                    <v-icon class="ml-4" style="color:#39657B ; font-size:25px;">public</v-icon>
+                  </v-list-tile-action>
+                  <v-list-tile-content>
+                    <v-list-tile-title style="color:#39657B ; font-size:18px;" class="ml-3">
+                      POLITICS
+                    </v-list-tile-title>
+                  </v-list-tile-content>
+                </v-list-tile>
+              </v-list>
             </a>
-            <a href="#/yes" style="text-decoration: none; margin-top:10%;">
-            <v-list>
-              <!-- eslint-disable-next-line -->
-              <v-list-tile ripple v-on:click="">
-                <v-list-tile-action>
-                  <v-icon class="ml-4" style="color:#39657B ; font-size:25px;">memory</v-icon>
-                </v-list-tile-action>
-                <v-list-tile-content>
-                  <v-list-tile-title style="color:#39657B ; font-size:18px;" class="ml-3">
-                    TECHNOLOGY
-                  </v-list-tile-title>
-                </v-list-tile-content>
-              </v-list-tile>
-            </v-list>
+            <a href="/#/Category/technology"  style="text-decoration: none; margin-top:10%;"> 
+              <v-list>
+                <v-list-tile ripple v-on:click="">
+                  <v-list-tile-action>
+                    <v-icon class="ml-4" style="color:#39657B ; font-size:25px;">memory</v-icon>
+                  </v-list-tile-action>
+                  <v-list-tile-content>
+                    <v-list-tile-title style="color:#39657B ; font-size:18px;" class="ml-3">
+                      TECHNOLOGY
+                    </v-list-tile-title>
+                  </v-list-tile-content>
+                </v-list-tile>
+              </v-list>
             </a>
-            <a href="#/yes" style="text-decoration: none; margin-top:10%;">
-            <v-list>
-              <!-- eslint-disable-next-line -->
-              <v-list-tile ripple v-on:click="">
-                <v-list-tile-action>
-                  <v-icon class="ml-4" style="color:#39657B ; font-size:25px;">bubble_chart</v-icon>
-                </v-list-tile-action>
-                <v-list-tile-content>
-                  <v-list-tile-title style="color:#39657B ; font-size:18px;" class="ml-3">
-                    CULTURE
-                  </v-list-tile-title>
-                </v-list-tile-content>
-              </v-list-tile>
-            </v-list>
+            <a href="/#/Category/culture" style="text-decoration: none; margin-top:10%;"> 
+              <v-list>
+                <v-list-tile ripple v-on:click="">
+                  <v-list-tile-action>
+                    <v-icon class="ml-4" style="color:#39657B ; font-size:25px;">bubble_chart</v-icon>
+                  </v-list-tile-action>
+                  <v-list-tile-content>
+                    <v-list-tile-title style="color:#39657B ; font-size:18px;" class="ml-3">
+                      CULTURE
+                    </v-list-tile-title>
+                  </v-list-tile-content>
+                </v-list-tile>
+              </v-list>
             </a>
-            <a href="#/yes" style="text-decoration: none; margin-top:10%;">
-            <v-list>
-              <!-- eslint-disable-next-line -->
-              <v-list-tile ripple v-on:click="">
-                <v-list-tile-action>
-                  <v-icon class="ml-4" style="color:#39657B ; font-size:25px;">rowing</v-icon>
-                </v-list-tile-action>
-                <v-list-tile-content>
-                  <v-list-tile-title style="color:#39657B ; font-size:18px;" class="ml-3">
-                    SPORT
-                  </v-list-tile-title>
-                </v-list-tile-content>
-              </v-list-tile>
-            </v-list>
+            <a href="/#/Category/sport" style="text-decoration: none; margin-top:10%;"> 
+              <v-list>
+                <v-list-tile ripple v-on:click="">
+                  <v-list-tile-action>
+                    <v-icon class="ml-4" style="color:#39657B ; font-size:25px;">rowing</v-icon>
+                  </v-list-tile-action>
+                  <v-list-tile-content>
+                    <v-list-tile-title style="color:#39657B ; font-size:18px;" class="ml-3">
+                      SPORT
+                    </v-list-tile-title>
+                  </v-list-tile-content>
+                </v-list-tile>
+              </v-list>
             </a>
-            <a href="#/yes" style="text-decoration: none; margin-top:10%;">
-            <v-list>
-              <!-- eslint-disable-next-line -->
-              <v-list-tile ripple v-on:click="">
-                <v-list-tile-action>
-                  <v-icon class="ml-4" style="color:#39657B ; font-size:25px;">streetview</v-icon>
-                </v-list-tile-action>
-                <v-list-tile-content>
-                  <v-list-tile-title style="color:#39657B ; font-size:18px;" class="ml-3">
-                    ART
-                  </v-list-tile-title>
-                </v-list-tile-content>
-              </v-list-tile>
-            </v-list>
+            <a href="/#/Category/art" style="text-decoration: none; margin-top:10%;"> 
+              <v-list>
+                <v-list-tile ripple v-on:click="">
+                  <v-list-tile-action>
+                    <v-icon class="ml-4" style="color:#39657B ; font-size:25px;">streetview</v-icon>
+                  </v-list-tile-action>
+                  <v-list-tile-content>
+                    <v-list-tile-title style="color:#39657B ; font-size:18px;" class="ml-3">
+                      ART
+                    </v-list-tile-title>
+                  </v-list-tile-content>
+                </v-list-tile>
+              </v-list>
             </a>
-            <a href="#/yes" style="text-decoration: none; margin-top:10%;">
-            <v-list>
-              <!-- eslint-disable-next-line -->
-              <v-list-tile ripple v-on:click="">
-                <v-list-tile-action>
-                  <!-- eslint-disable-next-line -->
-                  <v-icon class="ml-4" style="color:#39657B ; font-size:25px;">videogame_asset</v-icon>
-                </v-list-tile-action>
-                <v-list-tile-content>
-                  <v-list-tile-title style="color:#39657B ; font-size:18px;" class="ml-3">
-                    GAME
-                  </v-list-tile-title>
-                </v-list-tile-content>
-              </v-list-tile>
-            </v-list>
+            <a href="/#/Category/game" style="text-decoration: none; margin-top:10%;"> 
+              <v-list>
+                <v-list-tile ripple v-on:click="">
+                  <v-list-tile-action>
+                    <v-icon class="ml-4" style="color:#39657B ; font-size:25px;">videogame_asset</v-icon>
+                  </v-list-tile-action>
+                  <v-list-tile-content>
+                    <v-list-tile-title style="color:#39657B ; font-size:18px;" class="ml-3">
+                      GAME
+                    </v-list-tile-title>
+                  </v-list-tile-content>
+                </v-list-tile>
+              </v-list>
             </a>
-            <a href="#/yes" style="text-decoration: none; margin-top:10%;">
-            <v-list>
-              <!-- eslint-disable-next-line -->
-              <v-list-tile ripple v-on:click="">
-                <v-list-tile-action>
-                  <!-- eslint-disable-next-line -->
-                  <v-icon class="ml-4" style="color:#39657B ; font-size:25px;">school</v-icon>
-                </v-list-tile-action>
-                <v-list-tile-content>
-                  <v-list-tile-title style="color:#39657B ; font-size:18px;" class="ml-3">
-                    EDUCATION
-                  </v-list-tile-title>
-                </v-list-tile-content>
-              </v-list-tile>
-            </v-list>
+            <a href="/#/Category/education" style="text-decoration: none; margin-top:10%;"> 
+              <v-list>
+                <v-list-tile ripple v-on:click="">
+                  <v-list-tile-action>
+                    <v-icon class="ml-4" style="color:#39657B ; font-size:25px;">school</v-icon>
+                  </v-list-tile-action>
+                  <v-list-tile-content>
+                    <v-list-tile-title style="color:#39657B ; font-size:18px;" class="ml-3">
+                      EDUCATION
+                    </v-list-tile-title>
+                  </v-list-tile-content>
+                </v-list-tile>
+              </v-list>
             </a>
       </v-list>
     </v-navigation-drawer>
@@ -152,17 +143,32 @@
         <!-- eslint-disable-next-line -->
         <v-toolbar-side-icon v-on:click.stop="drawer = !drawer" class="hidden-lg-and-up ml-0" style="color:#3A5766;">
         </v-toolbar-side-icon>
-        <span style="">
-        <v-avatar size="95px" tile>
-          <img
-            src="@/assets/logo.png"
-            alt="avatar"
-          >
-        </v-avatar></span>
+        <a href="/#/" class="hidden-xs-only"> 
+            <v-avatar size="95px" tile>
+              <img
+                src="@/assets/logo.png"
+                alt="avatar"
+              >
+            </v-avatar>
+        </a>
+        <a href="/#/" class="hidden-sm-and-up"> 
+            <v-avatar size="45px" tile>
+              <img
+                src="@/assets/logo2.png"
+                alt="avatar"
+              >
+            </v-avatar>
+        </a>
+        
       </v-toolbar-title>
 
 
       <v-spacer></v-spacer>
+        <!-- <div  v-if="!(me != '')">
+          <v-btn  outline style="  color: #26a69a;  font-weight: 1000;  border: 3px solid #26a69a; border-radius: 9px;" @click="login = !login">
+            LOGIN
+          </v-btn>
+        </div> -->
         <v-btn icon @click="search_m = !search_m">
           <v-icon  style="color:#33505E ; font-weight:1000;">search</v-icon>
         </v-btn>
@@ -178,31 +184,40 @@
           </v-btn>
           <span >Bookmark lists</span>
         </v-tooltip>
-      <v-btn icon large>
-        <v-avatar size="42px" tile>
-          <img
-            src="@/assets/profile.jpg"
-            alt="avatar"
-            style="border-radius:50px;"
-          >
-        </v-avatar>
-      </v-btn>
+        <div v-if="me != '' ">
+          <v-btn icon large>
+            <v-avatar size="42px" tile>
+              <img
+                src="@/assets/profile.jpg"
+                alt="avatar"
+                style="border-radius:50px;"
+              >
+            </v-avatar>
+          </v-btn>
+        </div>
+        <!-- <div  v-if="!(me != '')">
+          <v-btn  outline style="  color: #00838f;  font-weight: 1000;  border: 3px solid #00838f; border-radius: 9px;" @click="signup = !signup">
+            SIGNUP
+          </v-btn>
+        </div> -->
     </v-toolbar>
-    <v-content>
+    <v-content style="background:#DFEBF7;">
       <router-view></router-view>      
     </v-content>
-    <v-btn
-      fab
-      bottom
-      right
-      color="blue"
-      dark
-      fixed
-      class="mb-5"
-      @click="dialog = !dialog"
-    >
-      <v-icon>add</v-icon>
-    </v-btn>
+    <div v-if="me != '' ">
+      <v-btn
+        fab
+        bottom
+        right
+        color="blue"
+        dark
+        fixed
+        class="mb-5"
+        @click="dialog = !dialog"
+      >
+        <v-icon>add</v-icon>
+      </v-btn>
+    </div>
     <v-dialog v-model="dialog" fullscreen hide-overlay transition style="margin:0px; padding:0px">
       <v-card  style=" margin:0px;">
         <v-toolbar dark color="#A6C7D2">
@@ -311,9 +326,7 @@
           </v-layout>
         </v-container>
         <v-card-actions>
-          <!-- <v-btn flat color="primary">More</v-btn> -->
           <v-spacer></v-spacer>
-          <!-- <v-btn flat color="primary" @click="dialog = false">Cancel</v-btn> -->
           <v-btn class="btnnn" style="background: #A6C7D2; color: #33505e;" @click="blog_save">Upload</v-btn>
         </v-card-actions>
       </v-card>
@@ -362,6 +375,33 @@
       </v-card>
     </v-dialog>
 
+    <v-dialog v-model="signup" fullscreen hide-overlay transition style="margin:0px; padding:0px">
+      <v-card  style=" margin:0px;">
+        <v-toolbar dark color="#A6C7D2">
+          <v-btn icon dark @click.native="signup = false">
+            <v-icon style="color:#33505E ; font-weight:5000; font-size:40px">keyboard_backspace</v-icon>
+          </v-btn>
+          <v-toolbar-title style="color:#33505E ; font-weight:1000;" class="mt-2">Favorite blogs</v-toolbar-title>
+          <v-spacer></v-spacer>
+          <v-toolbar-items>
+            <v-btn icon large disabled>
+              <v-avatar size="46px" tile>
+                <img
+                  src="@/assets/profile.jpg"
+                  alt="avatar"
+                  style="border-radius:50px;"
+                >
+              </v-avatar>
+            </v-btn>  
+          </v-toolbar-items>
+        </v-toolbar>
+        <v-container grid-list-sm class="pa-4">
+          <v-layout row wrap>
+
+          </v-layout>
+        </v-container>
+      </v-card>
+    </v-dialog>
 
     <v-dialog v-model="favorite_m" fullscreen hide-overlay transition style="margin:0px; padding:0px">
       <v-card  style=" margin:0px;">
@@ -422,6 +462,7 @@
 </template>
 
 <script>
+const token = localStorage.getItem("token");
 export default {
   data: () => ({
     image: "",
@@ -435,7 +476,12 @@ export default {
     image_sup: 0,
     search_m: false,
     favorite_m: false,
-    readlater_m: false
+    readlater_m: false,
+    name: "",
+    nameErrors: "",
+    me: [],
+    signup: false,
+    login: false
   }),
   props: {
     source: String
@@ -458,7 +504,6 @@ export default {
     },
     blog_save() {}
   },
-  watch: {},
   // eslint-disable-next-line
   created: function() {
     this.width =
@@ -468,10 +513,11 @@ export default {
     if (this.width < 1264) {
       this.drawer = false;
     }
-    // eslint-disable-next-line
+    if (token) {
+      this.me = this.$jwt.decode(token);
+    }
   }
 };
-// eslint-disable-next-line
 </script>
 
 
@@ -481,6 +527,7 @@ export default {
   padding: 0px;
   overflow: hidden;
   background: #dfebf7;
+  min-width: 320px;
 }
 .cati {
   color: #075379;
@@ -501,7 +548,6 @@ export default {
 .btnnn {
   text-transform: uppercase;
   width: 100%;
-
   font-family: Cambria, Cochin, Georgia, Times, "Times New Roman", serif;
   font-size: 25px;
   font-weight: 800;

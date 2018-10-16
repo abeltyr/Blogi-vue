@@ -91,18 +91,18 @@
                         <span class="contentt">
                           {{card.content | truncate(300, '...')}}
                         </span>
-                        <v-layout fill-height>
-                          <v-flex xs12 align-end flexbox >
-                            <span >
-                              <span style="color:#fff;">
-                                BY
-                              </span>    
-                              <router-link :to="{name: 'User', params:{id : card.user_id, name : card.user.full_name}}" class=" font_bottomt"> 
-                                    {{card.user.full_name}} 
-                              </router-link>
-                            </span>
-                          </v-flex>
-                        </v-layout>
+                          <v-layout fill-height>
+                            <v-flex xs12 align-end flexbox >
+                              <span >
+                                <span style="color:#fff;">
+                                  BY
+                                </span>    
+                                <router-link :to="{name: 'User', params:{id : card.user_id, name : card.user.full_name}}" class=" font_bottomt"> 
+                                      {{card.user.full_name}} 
+                                </router-link>
+                              </span>
+                            </v-flex>
+                          </v-layout>
                         <v-layout fill-height>
                           <v-flex xs12 align-end flexbox >
                             <span class=" font_last">  
@@ -196,7 +196,7 @@
             </div>
            
             <v-flex
-              v-for="card in (cards).slice(0,15)"
+              v-for="card in cards"
               xs12
               :key="card.title">
               <v-card class="bo mt-4 blue-grey">
@@ -300,8 +300,7 @@ export default {
     cards: [],
     times: [],
     tokens: 0,
-    none: false,
-    createdAt: "like"
+    none: false
   }),
   methods: {
     fetchblog() {
@@ -312,8 +311,7 @@ export default {
         this.loading = true;
         axios({
           method: "get",
-          // url: "https://ethblogi1.herokuapp.com/api/blog/all"
-          url: "http://localhost:4000/api/blog/all"
+          url: "http://localhost:4000/api/blog/all/Category/technology"
         })
           .then(response => {
             this.cards = response.data[1].rows;
@@ -327,7 +325,7 @@ export default {
             this.loading = true;
             this.$message.error(
               "Something went wrong. Please refresh the page!",
-              50
+              10000
             );
           });
       } else {
@@ -337,14 +335,6 @@ export default {
           50
         );
       }
-    },
-    orderedItems(cards) {
-      return this.cards.filter(item => {
-        if (this.cards) {
-          if (item[this.createdAt]) return item;
-          console.log(item);
-        }
-      });
     }
   },
   created: function() {
