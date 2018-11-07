@@ -6,136 +6,10 @@
       fixed
       app
       style="background:#DFEBF7;">
-      <v-list dense>
-          <v-layout row align-center class="mt-3">
-            <v-flex xs6>
-              <v-subheader >
-                <v-icon style="color:#39657B ; font-size:25px;" class="mr-2 mt-2">layers</v-icon>
-                <h3 class="mt-3 cati" >
-                  CATEGORI
-                </h3>
-              </v-subheader>
-            </v-flex>
-            <v-flex xs6 class="text-xs-center">
-            </v-flex>
-          </v-layout>
-            <a href="/#/Category/music" style="text-decoration: none; margin-top:10%;"> 
-              <v-list>
-                <v-list-tile ripple v-on:click="">
-                  <v-list-tile-action>
-                    <v-icon class="ml-4" style="color:#39657B ; font-size:25px;">music_video</v-icon>
-                  </v-list-tile-action>
-                  <v-list-tile-content>
-                    <v-list-tile-title style="color:#39657B ; font-size:18px;" class="ml-3">
-                      MUSIC
-                    </v-list-tile-title>
-                  </v-list-tile-content>
-                </v-list-tile>
-              </v-list>
-            </a>
-
-            <a href="/#/Category/politics"  style="text-decoration: none; margin-top:10%;"> 
-              <v-list>
-                <v-list-tile ripple v-on:click="">
-                  <v-list-tile-action>
-                    <v-icon class="ml-4" style="color:#39657B ; font-size:25px;">public</v-icon>
-                  </v-list-tile-action>
-                  <v-list-tile-content>
-                    <v-list-tile-title style="color:#39657B ; font-size:18px;" class="ml-3">
-                      POLITICS
-                    </v-list-tile-title>
-                  </v-list-tile-content>
-                </v-list-tile>
-              </v-list>
-            </a>
-            <a href="/#/Category/technology"  style="text-decoration: none; margin-top:10%;"> 
-              <v-list>
-                <v-list-tile ripple v-on:click="">
-                  <v-list-tile-action>
-                    <v-icon class="ml-4" style="color:#39657B ; font-size:25px;">memory</v-icon>
-                  </v-list-tile-action>
-                  <v-list-tile-content>
-                    <v-list-tile-title style="color:#39657B ; font-size:18px;" class="ml-3">
-                      TECHNOLOGY
-                    </v-list-tile-title>
-                  </v-list-tile-content>
-                </v-list-tile>
-              </v-list>
-            </a>
-            <a href="/#/Category/culture" style="text-decoration: none; margin-top:10%;"> 
-              <v-list>
-                <v-list-tile ripple v-on:click="">
-                  <v-list-tile-action>
-                    <v-icon class="ml-4" style="color:#39657B ; font-size:25px;">bubble_chart</v-icon>
-                  </v-list-tile-action>
-                  <v-list-tile-content>
-                    <v-list-tile-title style="color:#39657B ; font-size:18px;" class="ml-3">
-                      CULTURE
-                    </v-list-tile-title>
-                  </v-list-tile-content>
-                </v-list-tile>
-              </v-list>
-            </a>
-            <a href="/#/Category/sport" style="text-decoration: none; margin-top:10%;"> 
-              <v-list>
-                <v-list-tile ripple v-on:click="">
-                  <v-list-tile-action>
-                    <v-icon class="ml-4" style="color:#39657B ; font-size:25px;">rowing</v-icon>
-                  </v-list-tile-action>
-                  <v-list-tile-content>
-                    <v-list-tile-title style="color:#39657B ; font-size:18px;" class="ml-3">
-                      SPORT
-                    </v-list-tile-title>
-                  </v-list-tile-content>
-                </v-list-tile>
-              </v-list>
-            </a>
-            <a href="/#/Category/art" style="text-decoration: none; margin-top:10%;"> 
-              <v-list>
-                <v-list-tile ripple v-on:click="">
-                  <v-list-tile-action>
-                    <v-icon class="ml-4" style="color:#39657B ; font-size:25px;">streetview</v-icon>
-                  </v-list-tile-action>
-                  <v-list-tile-content>
-                    <v-list-tile-title style="color:#39657B ; font-size:18px;" class="ml-3">
-                      ART
-                    </v-list-tile-title>
-                  </v-list-tile-content>
-                </v-list-tile>
-              </v-list>
-            </a>
-            <a href="/#/Category/game" style="text-decoration: none; margin-top:10%;"> 
-              <v-list>
-                <v-list-tile ripple v-on:click="">
-                  <v-list-tile-action>
-                    <v-icon class="ml-4" style="color:#39657B ; font-size:25px;">videogame_asset</v-icon>
-                  </v-list-tile-action>
-                  <v-list-tile-content>
-                    <v-list-tile-title style="color:#39657B ; font-size:18px;" class="ml-3">
-                      GAME
-                    </v-list-tile-title>
-                  </v-list-tile-content>
-                </v-list-tile>
-              </v-list>
-            </a>
-            <a href="/#/Category/education" style="text-decoration: none; margin-top:10%;"> 
-              <v-list>
-                <v-list-tile ripple v-on:click="">
-                  <v-list-tile-action>
-                    <v-icon class="ml-4" style="color:#39657B ; font-size:25px;">school</v-icon>
-                  </v-list-tile-action>
-                  <v-list-tile-content>
-                    <v-list-tile-title style="color:#39657B ; font-size:18px;" class="ml-3">
-                      EDUCATION
-                    </v-list-tile-title>
-                  </v-list-tile-content>
-                </v-list-tile>
-              </v-list>
-            </a>
-      </v-list>
+      <Slider></Slider>
     </v-navigation-drawer>
     <v-toolbar :clipped-left="$vuetify.breakpoint.lgAndUp"
-      color="#A6C7D2"
+      color="#6aaac0"
       dark
       app
       fixed>
@@ -143,42 +17,34 @@
         <!-- eslint-disable-next-line -->
         <v-toolbar-side-icon v-on:click.stop="drawer = !drawer" class="hidden-lg-and-up ml-0" style="color:#3A5766;">
         </v-toolbar-side-icon>
-        <a href="/#/" class="hidden-xs-only"> 
-            <v-avatar size="95px" tile>
-              <img
-                src="@/assets/logo.png"
-                alt="avatar"
-              >
-            </v-avatar>
-        </a>
-        <a href="/#/" class="hidden-sm-and-up"> 
-            <v-avatar size="45px" tile>
-              <img
-                src="@/assets/logo2.png"
-                alt="avatar"
-              >
-            </v-avatar>
-        </a>
-        
-      </v-toolbar-title>
-
-
-      <v-spacer></v-spacer>
-        <!-- <div  v-if="!(me != '')">
-          <v-btn  outline style="  color: #26a69a;  font-weight: 1000;  border: 3px solid #26a69a; border-radius: 9px;" @click="login = !login">
-            LOGIN
-          </v-btn>
-        </div> -->
+          <a href="/#/" class="hidden-xs-only"> 
+              <v-avatar size="95px" tile>
+                <img
+                  src="@/assets/logo.png"
+                  alt="avatar"
+                >
+              </v-avatar>
+          </a>
+          <a href="/#/" class="hidden-sm-and-up"> 
+              <v-avatar size="45px" tile>
+                <img
+                  src="@/assets/logo2.png"
+                  alt="avatar"
+                >
+              </v-avatar>
+          </a>
+        </v-toolbar-title>
+        <v-spacer></v-spacer>
         <v-btn icon @click="search_m = !search_m">
           <v-icon  style="color:#33505E ; font-weight:1000;">search</v-icon>
         </v-btn>
-        <v-tooltip bottom>
+        <v-tooltip bottom v-if="me != '' ">
           <v-btn slot="activator" icon @click="favorite_m = !favorite_m">
             <v-icon  style="color:#33505E ; font-weight:10;">local_activity</v-icon>
           </v-btn>
           <span>Favorite lists</span>
         </v-tooltip>
-        <v-tooltip bottom>
+        <v-tooltip bottom v-if="me != '' ">
           <v-btn slot="activator" icon @click="readlater_m = !readlater_m">
              <v-icon  style="color:#33505E ; font-weight:1000;">collections_bookmark</v-icon>
           </v-btn>
@@ -195,11 +61,18 @@
             </v-avatar>
           </v-btn>
         </div>
-        <!-- <div  v-if="!(me != '')">
-          <v-btn  outline style="  color: #00838f;  font-weight: 1000;  border: 3px solid #00838f; border-radius: 9px;" @click="signup = !signup">
-            SIGNUP
+        <div  v-if="!(me != '')">
+          <v-btn icon large  @click="signup = !signup" >
+            <v-avatar size="45px" tile>
+              <img
+                src="@/assets/login.png"
+                alt="avatar"
+                style="border-radius:50px;"
+              >
+            </v-avatar>
+              <img src=""/>
           </v-btn>
-        </div> -->
+        </div>
     </v-toolbar>
     <v-content style="background:#DFEBF7;">
       <router-view></router-view>      
@@ -213,122 +86,31 @@
         dark
         fixed
         class="mb-5"
-        @click="dialog = !dialog"
-      >
-        <v-icon>add</v-icon>
+        @click="dialog = !dialog">
+        <v-icon style="font-weight:500; font-size:20px; ">border_color</v-icon>
       </v-btn>
     </div>
     <v-dialog v-model="dialog" fullscreen hide-overlay transition style="margin:0px; padding:0px">
       <v-card  style=" margin:0px;">
         <v-toolbar dark color="#A6C7D2">
-          <v-btn icon dark @click.native="dialog = false">
-            <v-icon style="color:#33505E ; font-weight:5000; font-size:40px">keyboard_backspace</v-icon>
-          </v-btn>
-          <v-toolbar-title style="color:#33505E ; font-weight:1000;">Write a Blog</v-toolbar-title>
-          <v-spacer></v-spacer>
-          <v-toolbar-items>
-            <v-btn icon large disabled>
-              <v-avatar size="46px" tile>
-                <img
-                  src="@/assets/profile.jpg"
-                  alt="avatar"
-                  style="border-radius:50px;"
-                >
-              </v-avatar>
-            </v-btn>  
-          </v-toolbar-items>
-        </v-toolbar>
-        <v-container grid-list-sm class="pa-4">
-          <v-layout row wrap>
-            <v-flex xs12>
-
-              <v-text-field
-                v-model="name"
-                prepend-icon="notes"
-                :error-messages="nameErrors"
-                :counter="20"
-                label="Title"
-                required
-                @input="$v.name.$touch()"
-                @blur="$v.name.$touch()"
-              ></v-text-field>
-            </v-flex>
-            <v-flex xs12>
-              <v-text-field
-                prepend-icon="photo"
-                placeholder="Image"
-                :value="image"
-                disabled
-              ></v-text-field>
-            </v-flex>
-            <v-flex lg5 offset-lg5 xs10 offset-xs3 md5 offset-md5 sm5 offset-sm5>
-              <v-btn large color="success" @click="image_tags">Get Image</v-btn>
-            </v-flex>
-            <v-flex v-if="image_tag" xs12>
-              <v-text-field
-                v-model="name"
-                prepend-icon="party_mode"
-                :error-messages="nameErrors"
-                :counter="30"
-                label="Enter Key word"
-                required
-                @input="$v.name.$touch()"
-                @blur="$v.name.$touch()"
-              ></v-text-field>
-              <v-flex lg5 offset-lg5 xs10 offset-xs3 md5 offset-md5 sm5 offset-sm5>
-                <v-btn large @click="image_sups" >Search</v-btn>
-              </v-flex>
-            </v-flex>
-            <v-flex xs12 sm8 offset-sm2  v-if="image_sup">
-              <v-card>
-                <v-container grid-list-sm fluid>
-                  <v-layout row wrap>
-                    <v-flex
-                      v-for="n in 9"
-                      :key="n"
-                      xs4
-                      d-flex
-                    >
-                      <v-card flat tile class="d-flex" >
-                          <v-img
-                            :src="`https://picsum.photos/500/300?image=${n * 5 + 10}`"
-                            :lazy-src="`https://picsum.photos/10/6?image=${n * 5 + 10}`"
-                            aspect-ratio="1"
-                            @click="image = `https://picsum.photos/500/300?image=${n * 5 + 10}`"
-                            class="grey lighten-2"
-                          >
-                          <v-layout
-                            slot="placeholder"
-                            fill-height
-                            align-center
-                            justify-center
-                            ma-0
-                          >
-                            <v-progress-circular indeterminate color="grey lighten-5"></v-progress-circular>
-                          </v-layout>
-                        </v-img>
-                      </v-card>
-                    </v-flex>
-                  </v-layout>
-                </v-container>
-              </v-card>
-            </v-flex>
-
-
-
-            <v-flex xs12>
-              <textarea class="t_area"
-                label="Solo textarea"
-                placeholder="The Woodman set to work at once, and so sharp was his axe that the tree was soon chopped nearly through."
-              ></textarea>
-            </v-flex>
-
-          </v-layout>
-        </v-container>
-        <v-card-actions>
-          <v-spacer></v-spacer>
-          <v-btn class="btnnn" style="background: #A6C7D2; color: #33505e;" @click="blog_save">Upload</v-btn>
-        </v-card-actions>
+                <v-btn icon dark @click.native="dialog = false">
+                    <v-icon style="color:#33505E ; font-weight:5000; font-size:40px">keyboard_backspace</v-icon>
+                </v-btn>
+                <v-toolbar-title style="color:#33505E ; font-weight:1000;">Write a Blog</v-toolbar-title>
+                <v-spacer></v-spacer>
+                <v-toolbar-items>
+                    <v-btn icon large disabled>
+                        <v-avatar size="46px" tile>
+                            <img
+                            src="@/assets/profile.jpg"
+                            alt="avatar"
+                            style="border-radius:50px;"
+                            >
+                        </v-avatar>
+                    </v-btn>  
+                </v-toolbar-items>
+            </v-toolbar>
+        <Newpost></Newpost>
       </v-card>
     </v-dialog>
 
@@ -352,26 +134,7 @@
             </v-btn>  
           </v-toolbar-items>
         </v-toolbar>
-        <v-container grid-list-sm class="pa-4">
-          <v-layout row wrap>
-            <v-flex xs10 offset-xs1>
-              <v-text-field
-                v-model="name"
-                :error-messages="nameErrors"
-                :counter="100"
-                label="Search Blog By Title"
-                required
-                class="mt-1"
-                @input="$v.name.$touch()"
-                @blur="$v.name.$touch()">
-              </v-text-field>
-            </v-flex>
-            <v-flex lg5 offset-lg5 xs10 offset-xs3 md5 offset-md5 sm5 offset-sm5>
-              <v-btn large color="success" @click="image_tags">SEARCH</v-btn>
-            </v-flex>
-
-          </v-layout>
-        </v-container>
+        <Search></Search>
       </v-card>
     </v-dialog>
 
@@ -423,11 +186,7 @@
             </v-btn>  
           </v-toolbar-items>
         </v-toolbar>
-        <v-container grid-list-sm class="pa-4">
-          <v-layout row wrap>
-
-          </v-layout>
-        </v-container>
+        <Favorite></Favorite>
       </v-card>
     </v-dialog>
 
@@ -451,21 +210,28 @@
             </v-btn>  
           </v-toolbar-items>
         </v-toolbar>
-        <v-container grid-list-sm class="pa-4">
-          <v-layout row wrap>
-
-          </v-layout>
-        </v-container>
+        <Bookmark></Bookmark>
       </v-card>
     </v-dialog>
   </v-app>
 </template>
 
 <script>
+import Bookmark from "@/components/blog/Bookmark";
+import Favorite from "@/components/blog/Favorite";
+import Slider from "@/components/layouts/Slider";
+import Newpost from "@/components/blog/Newpost";
+import Search from "@/components/blog/Search";
 const token = localStorage.getItem("token");
 export default {
+  components: {
+    Slider: Slider,
+    Newpost: Newpost,
+    Search: Search,
+    Favorite: Favorite,
+    Bookmark: Bookmark
+  },
   data: () => ({
-    image: "",
     dialog: false,
     notifications: false,
     sound: true,
@@ -477,34 +243,9 @@ export default {
     search_m: false,
     favorite_m: false,
     readlater_m: false,
-    name: "",
-    nameErrors: "",
     me: [],
-    signup: false,
-    login: false
+    signup: false
   }),
-  props: {
-    source: String
-  },
-  methods: {
-    image_tags() {
-      if (this.image_tag === 0) {
-        this.image_tag = 1;
-      } else if (this.image_tag === 1) {
-        this.image_tag = 0;
-      }
-    },
-    image_sups() {
-      if (this.image_sup === 0) {
-        this.image_sup = 1;
-      }
-      // else if (this.image_sup === 1) {
-      //   this.image_sup = 0;
-      // }
-    },
-    blog_save() {}
-  },
-  // eslint-disable-next-line
   created: function() {
     this.width =
       window.innerWidth ||

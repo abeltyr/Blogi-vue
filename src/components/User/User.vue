@@ -140,8 +140,7 @@
                 </v-card-actions>
               </v-card>
             </div>
-          </v-flex>
-         
+          </v-flex>         
         </v-layout>
       </v-container>
     </v-content>
@@ -162,7 +161,6 @@ export default {
       comments: [],
       num_comment: 0,
       user: [],
-      nameErrors: false,
       MUSIC: "music",
       POLITICS: "politics",
       TECHNOLOGY: "technology",
@@ -183,8 +181,8 @@ export default {
   },
   created: function() {
     this.myblogs();
-    if(token){
-        this.me = this.$jwt.decode(token);
+    if (token) {
+      this.me = this.$jwt.decode(token);
     }
   },
   watch: {},
@@ -193,10 +191,7 @@ export default {
       this.id = this.$route.params.id;
       axios({
         method: "get",
-        url: "http://localhost:4000/api/blog/user/" + this.id,
-        headers: {
-          Authorization: token
-        }
+        url: "http://localhost:4000/api/blog/user/" + this.id
       })
         .then(response => {
           this.user = response.data[1];
@@ -215,7 +210,9 @@ export default {
               this.followers = response.data.followers;
             })
             .catch(error => {
-              console.log(error);
+              if (error.response.status === 401) {
+                localStorage.removeItem("token");
+              }
             });
 
           axios({
@@ -230,6 +227,9 @@ export default {
             })
             .catch(error => {
               console.log(error);
+              if (error.response.status === 401) {
+                localStorage.removeItem("token");
+              }
             });
 
           axios({
@@ -247,6 +247,9 @@ export default {
             })
             .catch(error => {
               console.log(error);
+              if (error.response.status === 401) {
+                localStorage.removeItem("token");
+              }
             });
         })
         .catch(error => {
@@ -257,50 +260,57 @@ export default {
       if (this.follow_tag === 0) {
         this.follow_tag = 1;
         axios({
-            method: "post",
-            url: "http://localhost:4000/api//Follow/User",
-            headers: {
-              Authorization: token
-            },
-            data: {
-              followed_id: this.user.id
+          method: "post",
+          url: "http://localhost:4000/api//Follow/User",
+          headers: {
+            Authorization: token
+          },
+          data: {
+            followed_id: this.user.id
+          }
+        })
+          .then(response => {
+            if (response.data) {
+              this.follow_tag = 1;
+              this.followers = this.followers + 1;
             }
           })
-            .then(response => {
-                if(response.data){
-                    this.follow_tag = 1;
-                    this.followers = this.followers + 1;
-                }
-            })
-            .catch(error => {
-                console.log(error);
-                this.follow_tag = 0;
-            });
-      } 
-    else if (this.follow_tag === 1) {
+          .catch(error => {
+            console.log(error);
+            this.followers = this.followers - 1;
+            this.follow_tag = 0;
+            if (error.response.status === 401) {
+              localStorage.removeItem("token");
+            }
+          });
+      } else if (this.follow_tag === 1) {
         this.follow_tag = 0;
         axios({
-            method: "delete",
-            url: "http://localhost:4000/api//Unfollow/User",
-            headers: {
-              Authorization: token
-            },
-            data: {
-              followed_id: this.user.id
+          method: "delete",
+          url: "http://localhost:4000/api//Unfollow/User",
+          headers: {
+            Authorization: token
+          },
+          data: {
+            followed_id: this.user.id
+          }
+        })
+          .then(response => {
+            if (response.data) {
+              this.follow_tag = 0;
+              this.followers = this.followers - 1;
             }
           })
-            .then(response => {
-                if(response.data){
-                    this.follow_tag = 0;
-                    this.followers = this.followers - 1;
-                }
-            })
-            .catch(error => {
-                console.log(error);
-                this.follow_tag = 1;
-            });
+          .catch(error => {
+            console.log(error);
+            this.follow_tag = 1;
+            this.followers = this.followers + 1;
+            if (error.response.status === 401) {
+              localStorage.removeItem("token");
+            }
+          });
       }
-    },
+    }
   }
 };
 </script>

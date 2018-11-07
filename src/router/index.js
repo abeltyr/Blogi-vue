@@ -1,7 +1,8 @@
 import Vue from 'vue';
 import Router from 'vue-router';
-import HelloWorld from '@/components/HelloWorld';
-import Readblog from '@/components/blog/Readblog';
+import AllBlogs from '@/components/AllBlogs';
+// import Readblog from '@/components/blog/Readblog';
+import BlogD from '@/components/blog/BlogD';
 import User from '@/components/User/User';
 import Music from '@/components/category/Music';
 import Politics from '@/components/category/Politics';
@@ -17,12 +18,12 @@ Vue.use(Router);
 export default new Router({
   routes: [{
     path: '/',
-    name: 'HelloWorld',
-    component: HelloWorld,
+    name: 'AllBlogs',
+    component: AllBlogs,
   }, {
     path: '/Readblog/:title/:id',
     name: 'Readblog',
-    component: Readblog,
+    component: BlogD,
   }, {
     path: '/User/:name/:id',
     name: 'User',
